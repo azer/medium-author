@@ -1,0 +1,25 @@
+{
+  "name": "medium-author",
+  "version": "0.0.0",
+  "description": "Get a Medium author with list of articles",
+  "main": "index.js",
+  "scripts": {
+    "test": "fox"
+  },
+  "dependencies": {
+    "get-json": "0.0.1"
+  },
+  "devDependencies": {
+    "prova": "*"
+  },
+  "keywords": [
+    "medium",
+    "articles"
+  ],
+  "repository": {
+    "url": "git@github.com:azer/medium-author.git",
+    "type": "git"
+  },
+  "author": "Azer Koçulu <azer@kodfabrik.com>",
+  "license": "BSD"
+}
