@@ -19,7 +19,7 @@ author('azerishere', function (error, azer) {
   // => Azer Koçulu
 
   author.posts
-  [{ title: "Çatışma Diyalektiği", url: "http://medium.com/p/329f78bddf89", snippet: "Dünya bir çatışma alanıdır." }, ...]
+  // => [{ title: "Çatışma Diyalektiği", url: "http://medium.com/p/329f78bddf89", snippet: "Dünya bir çatışma alanıdır." }, ...]
 
 })
 ```
