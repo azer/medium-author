@@ -1,6 +1,6 @@
 ## medium-author
 
-Get a Medium author with list of posts
+Get a Medium author with list of posts. See also: [medium-post](http://github.com/azer/medium-post)
 
 ## Install
 
