@@ -1,18 +1,19 @@
+var test = require('prova');
 var author = require("./");
 
-it('returns author bio', function(done){
-  author('azerishere', function (error, author) {
-    expect(author.name).to.equal("Azer Koçulu");
-    expect(author.bio).to.contain("Anatolian");
-    expect(author.username).to.equal('azerishere');
-    done();
+test('returns author bio', function (t) {
+  author('azerbike', function (error, author) {
+    t.equal(author.name, "Azer Koçulu");
+    t.ok(author.bio.indexOf("azer.bike") > -1);
+    t.equal(author.username, 'azerbike');
+    t.end();
   });
 });
 
-it('returns list of posts', function(done){
-  author('azerishere', function (error, author) {
-    expect(author.posts).to.exist;
-    expect(author.posts[0].url).to.equal('http://medium.com/p/' + author.posts[0].id);
-    done();
+test('returns list of posts', function (t) {
+  author('azerbike', function (error, author) {
+    t.ok(author.posts);
+    t.equal(author.posts[0].url, 'http://medium.com/p/' + author.posts[0].id);
+    t.end();
   });
 });
